@@ -1,0 +1,61 @@
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  position: relative;
+  font-size: 18px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+      transform: rotate(180deg);
+
+      &.rotated {
+        transform: rotate(0);
+      }
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $red;
+      border-bottom: 1px dashed $red;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    top: 35px;
+    right: -5px;
+    background: $white;
+    box-shadow: 0 5px 15px $transparent-dark;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 230px;
+    z-index: 100;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: darken($bgc-hover, 3%);
+        }
+
+        &.active {
+          color: $red;
+        }
+      }
+    }
+  }
+}

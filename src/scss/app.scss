@@ -1,0 +1,32 @@
+@import "variables";
+@import "libs/normalize";
+
+@import "blocks/all";
+@import "components/all";
+@import "pages/all";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.app-wrapper {
+  background-color: $background-color;
+  min-height: calc(100vh - 100px);
+}
+
+.content {
+  padding: 15px;
+  margin-top: 100px;
+}
+
+.wrapper {
+  width: calc(77vw + 80px);
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px
+}
+
+@media screen and (max-width: 410px) {
+  .wrapper {
+    width: auto;
+  }
+}

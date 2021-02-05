@@ -1,0 +1,90 @@
+{
+  "rolls": [
+    {
+      "id": 0,
+      "imageUrl": "https://sushiwok.ua/img/b81672fa8f22cfc078fb3ae26ed1b78b/485x485",
+      "title": "Ролл Сочный краб",
+      "composition": "краб-крем, огурец, кунжут, сливочный сыр, гуакамоле соус, масаго",
+      "promotion": false,
+      "weight": 214,
+      "price": 89,
+      "promotionPrice": 89,
+      "popular": 4,
+      "newProduct": true
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://sushiwok.ua/img/d6541c72b2bc569ca413d47f62d12871/600x350",
+      "title": "Ролл Спайси креветка",
+      "composition": "лосось, сливочный сыр, огурец, масаго, креветки, спайси соус",
+      "promotion": true,
+      "weight": 217,
+      "price": 135,
+      "promotionPrice": 115,
+      "popular": 5,
+      "newProduct": true
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://sushiwok.ua/img/6af8ca7aed28e2353df23c755fd940b2/600x350",
+      "title": "Ролл Сырная креветка",
+      "composition": "сливочный сыр, салат айсберг, краб-крем, медовый соус, пармезан, масаго, креветки",
+      "promotion": false,
+      "weight": 247,
+      "price": 129,
+      "promotionPrice": 129,
+      "popular": 3,
+      "newProduct": false
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://sushiwok.ua/img/166947ed3601bf95c81e3e6e5ab1a2be/600x350",
+      "title": "Ролл Медовый лосось",
+      "composition": "авокадо, лосось, огурец, сливочный сыр, медовый соус, паприка",
+      "promotion": false,
+      "weight": 234,
+      "price": 99,
+      "promotionPrice": 99,
+      "popular": 6,
+      "newProduct": true
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://sushiwok.ua/img/0b6c03feab8677474d44e2d1721a3a6b/600x350",
+      "title": "Ролл Берри",
+      "composition": "банан, вишня, сливочный сыр, тесто харумаки, сироп клубничный, сироп шоколадный",
+      "promotion": true,
+      "weight": 146,
+      "price": 90,
+      "promotionPrice": 79,
+      "popular": 8,
+      "newProduct": false
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://sushiwok.ua/img/f69b5300052cb7ed824d66d4277a3317/600x350",
+      "title": "Ролл Сочный фрукт",
+      "composition": "сливочный сыр, ананас, банан, киви, сироп клубничный, сироп шоколадный, тесто харумаки",
+      "promotion": true,
+      "weight": 146,
+      "price": 85,
+      "promotionPrice": 69,
+      "popular": 7,
+      "newProduct": false
+    }
+  ],
+  "baked-rolls": [
+    {
+      "id": 0,
+      "imageUrl": "https://sushiwok.ru/img/ebf4dac8c375ed4de8bdfdf2112c232c/600x350",
+      "title": "Ролл Морской микс",
+      "composition": "лосось, креветки, сливочный сыр, огурец, апельсиновый соус, спайси соус, кунжут",
+      "promotion": false,
+      "weight": 248,
+      "price": 115,
+      "promotionPrice": 115,
+      "popular": 6,
+      "newProduct": false
+    }
+  ]
+}

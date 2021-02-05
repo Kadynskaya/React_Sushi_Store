@@ -1,0 +1,11 @@
+.menu-item {
+  &__items-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    @media screen and (max-width: 1600px) {
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.counter {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  user-select: none;
+
+  &--cartItem {
+    @media screen and (max-width: 739px) {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__minus, &__plus {
+    height: 48px;
+    width: 48px;
+    border: 2px solid $symbols-color;
+    color: $symbols-color;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background: inherit;
+
+    &:hover {
+      background: $light-bgc;
+    }
+
+    &--foodCard {
+      border: 2px solid $red;
+      svg path {
+        fill: $red;
+      }
+
+      &:hover {
+        background: $red;
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &__count {
+    font-size: 27px;
+    margin: 0 12px;
+  }
+}

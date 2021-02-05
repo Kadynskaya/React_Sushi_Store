@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 13px 17px;
+  user-select: none;
+
+  &--redRadiusBtn {
+    background: inherit;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    border: 2px solid $red;
+    color: $red;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+  }
+}

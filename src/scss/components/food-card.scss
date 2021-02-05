@@ -1,0 +1,139 @@
+.food-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 24%;
+  margin: 10px 4px;
+  background-color: $light-bgc;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+
+  @media screen and (max-width: 1600px) {
+    flex-basis: 32%;
+  }
+
+  @media screen and (max-width: 1300px) {
+    flex-basis: 40%;
+  }
+
+  @media screen and (max-width: 870px) {
+    flex-basis: 58%;
+  }
+
+  // top
+
+  &__top {
+    position: relative;
+    margin-bottom: 20px;
+    flex-basis: 40%;
+  }
+
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    max-height: 250px;
+    padding: 10px;
+  }
+
+  &__img {
+    max-height: 250px;
+  }
+
+  &__new {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $green;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 24px;
+    padding-right: 20px;
+  }
+
+  // description
+
+  &__description {
+    padding: 0 20px;
+    flex-basis: 30%;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__composition,
+  &__weight,
+  &__promotion {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &__promotion {
+    color: $red;
+    font-weight: 500;
+  }
+
+  &__composition, &__weight {
+    color: $grey;
+  }
+
+  // bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    flex-basis: 30%;
+  }
+
+  &__priceBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price, &__salePrice {
+    font-size: 27px;
+    font-weight: 500;
+  }
+
+  &__price {
+    color: $black;
+  }
+
+  &__salePrice {
+    color: $red;
+  }
+
+  .sale {
+    color: $grey;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+
+  &__btn-icon {
+    margin-left: 7px;
+  }
+}
+
+.food-card:hover {
+  background-color: $bgc-hover;
+  border: 1px solid $main-header-color;
+
+  .button--redRadiusBtn {
+    @extend .food-card:hover;
+    border: 2px solid $red;
+  }
+
+  .button {
+    &--redRadiusBtn:hover {
+      background-color: $red;
+      color: $white;
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+}
+

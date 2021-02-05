@@ -1,0 +1,47 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: $main-header-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  &__logo {
+    img {
+      width: 230px;
+    }
+  }
+
+  &__cart {
+    width: 110px;
+    cursor: pointer;
+    position: relative;
+
+    #icon-basket {
+      fill: $turquoise;
+      padding-top: 12px;
+    }
+  }
+
+  &__total-count {
+    position: absolute;
+    z-index: 1;
+    background: $background-color;
+    border-radius: 50%;
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    right: 12px;
+    top: 32px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+}

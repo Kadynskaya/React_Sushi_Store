@@ -1,0 +1,67 @@
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 20px 0;
+
+  @media screen and (max-width: 739px) {
+    &:nth-child(even) {
+      background-color: $light-bgc;
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    align-items: center;
+    width: 66px;
+    margin-right: 20px;
+
+    @media screen and (max-width: 739px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+
+    @media screen and (max-width: 739px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__price {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &__btn-wrap {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0 15px;
+  }
+
+  &__btn {
+    width: 15px;
+    height: 15px;
+    background: url("../../assets/img/form-close-gray.svg") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+  }
+}
